@@ -1,0 +1,230 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  height: 3.8rem;
+  width: 100%;
+}
+
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  background-color: #326771;
+  color: black;
+}
+
+.user-info {
+  float: right;
+  padding: 17px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.user-info p {
+  margin: 0 10px 0 0;
+  color: #f2f2f2;
+}
+
+.user-info img {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.logout-button {
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  padding: 4px;
+}
+
+.logout-button:hover {
+  background-color: rgba(0, 0, 0, 0.055);
+  color: rgb(250, 0, 0);
+}
+
+/* Home Page */
+.home-page {
+  width: 98.5%;
+  height: 100vh;
+  padding: 10px;
+  background-color: #326771;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.posts {
+  background-color: #DDBEA8;
+  width: 30%;
+  height: 14rem;
+  margin: 10px;
+  box-shadow: 2px 3px 4px;
+  border-radius: 3%;
+}
+
+/* Login Page */
+.login-page {
+  padding: 20px;
+}
+
+.login-button {
+  background-color: #4285F4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #357ae8;
+}
+
+/* Form post */
+.create-post {
+  background-color: #326771;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.post-form {
+  background-color: #333333;
+  padding: 30px 20px;
+  border-radius: 3%;
+  margin-top: 5rem;
+  width: 320px;
+  height: 260px;
+  box-shadow: 2px 3px 4px;
+}
+
+input, textarea {
+  font-family: "Nunito", sans-serif;
+  padding: 8px 10px;
+  margin: 3px 8px 5px 8px;
+  border: 0px transparent;
+  border-radius: 5px;
+  color: #420ba7;
+  font-size: 16px;
+  z-index: 1;
+}
+
+textarea {
+  resize: none;
+  height: 7rem;
+  width: 16rem;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar a, .user-info {
+    display: block;
+    text-align: left;
+  }
+  .navbar a:hover {
+    background-color: #333; 
+    color: #f2f2f2;      
+  }
+  .user-info {
+    text-align: center;
+  }
+
+  .posts {
+    width: 45%;
+  }
+
+  .post-form {
+    width: 80%;
+    margin-top: 2rem;
+  }
+  .home-page{
+    height: 100vh;
+    width: 98%;
+  }
+}
+
+@media (max-width: 768px) {
+
+.user-info {
+    margin-top: 0.5rem;
+    padding: 2px 10px 5px;
+    font-size: 16px;
+  }
+  .navbar a:hover {
+    background-color: #333; 
+    color: #f2f2f2;       
+  }
+
+  .posts {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+  }
+
+  .post-form {
+    width: 90%;
+    padding: 20px 10px;
+    margin-top: 1rem;
+  }
+
+  input, textarea {
+    width: calc(70% - 5rem);
+    margin: 3px 10px;
+  }
+  .home-page{
+    height: auto;
+    width: 97.3%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar a, .user-info {
+    font-size: 14px;
+  }
+
+  .posts {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+  }
+
+  .post-form {
+    width: 95%;
+    padding: 15px 10px;
+    margin: 1rem;
+  }
+
+  input, textarea {
+    max-width: 80%;
+    margin: 3px 10px;
+  }
+}
