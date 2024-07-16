@@ -26,7 +26,8 @@ Como foi o primeiro contato com react, além do fato do curso ser bem direto e p
 * React com Typescript no front-end.
 * Firebase no back-end.
 
-### Site hospedado:
+### Site hospedado: [firebase-social-midia-react](https://react-couser.web.app/)
+
 
 
 
