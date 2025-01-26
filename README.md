@@ -1,80 +1,141 @@
-# ⛬ Primeiro projeto em react ⛬
-> Finalização do curso para iniciantes a react do canal [Pedrotech](https://www.youtube.com/@PedroTechnologies/playlists)!
+# ⛬ Firebase Social Media React ⛬
 
-### Conhecimentos Proporcionados pelo Curso:
-* JSX, Components, Props;
-* Ternary Operators, Lists and CSS;
-* States in React, useState Hook;
-* Component Lifecycle, useEffect Hook;
-* Fetching Data from API's;
-* React Router DOM;
-* State Management, useContext Hook;
-* React Query;
-* Forms in React;
-* Custom Hooks;
-* Typescript, Type Safety;
-* Redux Toolkit;
-* Database with Firebase;
+> Finalização do curso para iniciantes em React do canal [Pedrotech](https://www.youtube.com/@PedroTechnologies/playlists).
 
-### Sobre o projeto:
-Um projeto que contém de início uma tela home, e uma de login, ao o usuário fazer o login que será com a autenticação do firebase, ele irá para a página home novamente onde irá conter publicações feitas pelos usuários, com opção apenas de curtir e descurtir, no canto superior direito terá o nome do usuário sua foto de perfil e um botão de logout, e na aba que seria o login, haverá a aba de criação de post, onde foi usado o "yup" que está na biblioteca do react-hook-form, para a validação dos campos, onde ao fazer o post ou apenas curtir, todos os dados são salvos no banco de dados do firebase. E no geral é um projeto bem simples apenas para a solidificação de alguns conhecimentos fornecidos pelo curso. Além disso, o deploy foi feito também com o firebase.
+---
 
-### Sobre o curso:
-Como foi o primeiro contato com react, além do fato do curso ser bem direto e prático, a maioria dos conhecimentos ainda não foram bem consolidados porque assim como qualquer outra coisa na vida, apenas aprendemos de fato com a prática, mas obtive um entendimento melhor sobre essa biblioteca que é o react, sobre como funciona a construção dos itens com ela, sobre a manipulação e requerimento de dados, além de integração com banco de dados onde conheci o firebase do google que é uma plataforma digital utilizada para facilitar o desenvolvimento de aplicativos web ou móveis, de uma forma efetiva, rápida e simples. Obtive conhecimentos também sobre o typescript que inclusive o projeto final do curso foi feito com ele.
-
-### Ferramentas de Desenvolvimento
-* React com Typescript no front-end.
-* Firebase no back-end.
-
-### Site hospedado: [firebase-social-midia-react](https://react-couser.web.app/)
+## 🌟 Link do Projeto Hospedado:
+ **Link da Implantação**: [firebase-social-midia-react](https://react-couser.web.app/).
 
 
+---
 
+## 📖 Descrição do Projeto
 
+O projeto **Firebase Social Media React** é uma aplicação desenvolvida como conclusão do curso introdutório a React. A aplicação consiste em uma plataforma de publicações com funcionalidades de login, interações sociais e manipulação de dados em tempo real, integrados ao **Firebase**.
 
-# Getting Started with Create React App
+O projeto apresenta as seguintes funcionalidades:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Tela de Login**: Autenticação utilizando Firebase Authentication.
+- **Tela Inicial/Home**:
+  - Exibição de postagens feitas pelos usuários.
+  - Interações simples: curtir e descurtir publicações.
+  - Visualização do nome e foto de perfil do usuário autenticado.
+  - Botão de logout.
+- **Tela de Criação de Postagens**: Permite ao usuário criar novas publicações com validação de campos utilizando a biblioteca **Yup** (via React Hook Form).
+- **Banco de Dados**: Todas as interações e publicações são armazenadas no **Firebase Realtime Database**.
 
-## Available Scripts
+O objetivo principal foi solidificar os conhecimentos adquiridos no curso, utilizando conceitos fundamentais de React aliados a tecnologias como Firebase e TypeScript.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎓 Conhecimentos Aplicados
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Durante o desenvolvimento do projeto, foram explorados os seguintes conceitos:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **JSX, Componentização e Props**;
+- **Operações Ternárias, Listas e CSS**;
+- **Estados no React (useState)**;
+- **Ciclo de Vida de Componentes (useEffect)**;
+- **Consumo de APIs**;
+- **React Router DOM**;
+- **Gerenciamento de Estados com useContext**;
+- **React Query**;
+- **Formulários e validações com React Hook Form e Yup**;
+- **Hooks Customizados**;
+- **Integração com TypeScript**;
+- **Redux Toolkit**;
+- **Integração e manipulação de dados com Firebase**.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tecnologias Utilizadas
 
-### `npm run build`
+- **React** (com TypeScript);
+- **Firebase** (Authentication e Realtime Database);
+- **React Hook Form** e **Yup** (validação de formulários);
+- **React Router DOM** (navegação entre páginas);
+- **CSS** (estilização personalizada).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Instalação e Uso
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Clonando o repositório
 
-### `npm run eject`
+1. Clone o repositório com o comando:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+git clone https://github.com/MarceloHabreu/firebase-social-midia-react.git
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Acesse o diretório do projeto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+cd react-social-media
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Instalando as dependências
 
-## Learn More
+Instale as dependências do projeto utilizando **npm** ou **yarn**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+# ou
+yarn install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Executando o projeto
+
+Inicie o servidor de desenvolvimento:
+
+```bash
+npm start
+# ou
+yarn start
+```
+
+Abra o navegador e acesse: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🌟 Funcionalidades
+
+- **Login e Logout**: Autenticação rápida e segura com Firebase Authentication.
+- **Publicações**: Criar e exibir postagens, com a opção de curtir/descurtir.
+- **Validação de Formulários**: Verificação de campos obrigatórios antes de criar postagens.
+- **Banco de Dados em Tempo Real**: Atualização instantânea de publicações e interações.
+- **Integração Total com Firebase**: Realtime Database e Authentication.
+
+---
+
+## 📸 Demonstração
+
+### Tela Inicial (Login)
+![Tela Login](https://github.com/MarceloHabreu/firebase-social-midia-react/blob/main/screenshotsProject/Screenshot%202025-01-26%20173052.png)
+
+### Tela de Home (Logado)
+![Tela Home](https://github.com/MarceloHabreu/firebase-social-midia-react/blob/main/screenshotsProject/Screenshot%202025-01-26%20173121.png)
+
+### Tela de Criação de Postagens
+![Tela CreatePost](https://github.com/MarceloHabreu/firebase-social-midia-react/blob/main/screenshotsProject/Screenshot%202025-01-26%20173150.png)
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+---
+
+## 📜 Licença
+
+Este projeto está licenciado sob a MIT License.
+
+---
+
+## 👤 Autor
+
+- **Marcelo Henrique Abreu Silva**
+- LinkedIn: [MarceloHabreu](https://www.linkedin.com/in/marcelohasilva/)
+
